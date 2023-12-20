@@ -1,0 +1,15 @@
+from random import randint
+
+choice = ["rock", "paper", "scissors"]
+computer = choice[randint(0, 2)]
+player = input("rock, paper, or scissors?: ")
+if player == computer:
+    print("Tie!")
+elif player == "rock" and computer == "scissors":
+    print("You win!")
+elif player == "paper" and computer == "rock":
+    print("You win!")
+elif player == "scissors" and computer == "paper":
+    print("You win!")
+else:
+    print("You lose!")
